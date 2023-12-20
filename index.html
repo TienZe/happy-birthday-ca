@@ -5,14 +5,26 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+    crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        .carousel-item img {
+            width: 500px; /* Đặt chiều rộng mong muốn */
+            height: 375px; /* Giữ chiều cao không vượt quá 200px */
+        }
+
+    </style>
 </head>
 
 <body>
     <div class="container">
         <div class="row">
             <div class="loader">
-                <button id="play">Start</button>
+                <button id="play">What day is 20/12?</button>
             </div>
         </div>
     </div>
@@ -23,39 +35,91 @@
     </audio>
     <canvas id="confetti"></canvas>
     <div class="main">
-        <div class="container pt-5">
+        <div class="container pt-4">
             <div class="row">
-
-                <div class="col-12 col-xl-6 mx-auto">
-                    <img src="img/banner.png" alt="">
-                </div>
-
-                <div class="col-12  text-center">
-                    <div id="name" class="area">Gaurav</div>
-                </div>
-
-                <div class="col-12 text-center">
-                    <div class="type-wrap">
-                        <div id="typed-strings" class="typing">
-                            <h2>Happy Birthday <i id="nae">Gaurav</i></h2>
-                            <h2>Have a wonderful day</h2>
-                            <h2>Filled with joy and happiness.</h2>
-                        </div>
-                        <span id="typed" style="white-space:pre;"></span>
+                <div class="col-xl-6 col-12 row">
+                    <div class="col-12">
+                        <img src="img/banner.png" alt="" class="d-block mx-auto" style="width: 85%;">
                     </div>
-                </div>
 
-                <div class="col-12 col-xl-3 cake">
-                    <img src="img/cake.gif" alt="">
+                    <div class="col-12  text-center">
+                        <div id="name" class="area">CÁ</div>
+                    </div>
+                
+                    <div class="col-12 text-center" style="min-height: 75px;">
+                        <div class="type-wrap">
+                            <div id="typed-strings" class="typing">
+                                <h2>Happy Birthday, <i id="nae">Cá</i> :))</h2>
+                                <h2>Have a wonderful day ^^</h2>
+                                <h2>All the best on your special day!</h2>
+                                <h2>Blow the candles and make wish. It will come true!</h2>
+                                <h2>Happy Birthday, dear friend! Wishing you a day filled with joy and meaningful moments.</h2>
+                                <h2>Sending warmest wishes on your birthday!</h2>
+                                <h2>May your day be filled with love, and surrounded by friends and family.</h2>
+                                <h2>Happy Birthday to an incredible soul!</h2>
+                                <h2>Wish you always have a happy heart and a most successful life!</h2>
+                                <h2>On your special day, may every moment be a joyous celebration of the person you are.</h2>
+                                <h2>May you step into the new year with confidence, health, and the best memories.</h2>
+                            </div>
+                            <span id="typed" style="overflow-wrap: break-word;"></span>
+                        </div>
+                    </div>
+                
+                    <div class="col-12" style="margin-top: -15px;">
+                        <img src="img/cake.gif" alt="" class="d-block mx-auto" style="width: 45%;">
+                    </div>   
+                </div>
+                
+                <div class="col-xl-6 col-12 d-flex justify-content-center align-items-center">
+                    <div class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="img/1.jpg" class="d-block rounded" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/2.jpg" class="d-block rounded" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/3.jpg" class="d-block rounded" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/4.jpg" class="d-block rounded" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/5.jpg" class="d-block rounded" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/6.jpg" class="d-block rounded" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/7.jpg" class="d-block rounded" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/8.jpg" class="d-block rounded" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/9.jpg" class="d-block rounded" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/10.jpg" class="d-block rounded" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/11.jpg" class="d-block rounded" alt="...">
+                          </div>
+
+                        </div>
+                      </div>
                 </div>
             </div>
         </div>
         <img src="img/Balloon-Border.png" width="100%" class="balloon-border">
     </div>
 </body>
+
 <script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
 <script src="js/jquery.js"></script>
 <script src="js/typed.min.js"></script>
 <script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
 </html>
